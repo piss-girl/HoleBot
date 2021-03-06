@@ -29,7 +29,7 @@ async def on_ready():
 
 @bot.event
 async def on_message(message):
-    if (('masspirg' in message.content) or ('MASSPIRG' in message.content) or ('Masspirg' in message.content) or ('Mass pirg' in message.content) or ('mass pirg' in message.content)):
+    if (('masspirg' in message.content.lower()) or ('mass pirg' in message.content.lower())):
         await masspirg_reaction(message)
     UMLCS = bot.get_guild(int(umlcs))
     if (message.guild == UMLCS):
@@ -74,7 +74,7 @@ async def verified_reaction(message):
         await message.add_reaction(o)
         await message.add_reaction(l)
         await message.add_reaction(e_emoji)
-    if (pissv_e.match(message.content)) or (pisv_e.match(message.content)):
+    if (pissv_e.match(message.content)) or (pisv_e.match(message.content)) or ("urine" in message.content):
         piss = bot.get_emoji(int(piss_id))
         await message.add_reaction(piss)
     if (cumv_e.match(message.content)) or (coomv_e.match(message.content)):
@@ -98,7 +98,7 @@ async def otherservers_reaction(message):
         await message.add_reaction(o)
         await message.add_reaction(l)
         await message.add_reaction(e_emoji)
-    if (pissv_e.match(message.content)) or (pis_e.match(message.content)):
+    if (pissv_e.match(message.content)) or (pis_e.match(message.content)) or ("urine" in message.content):
         piss = bot.get_emoji(int(piss_id))
         await message.add_reaction(piss)
     if (cumv_e.match(message.content)) or (coom_e.match(message.content)):

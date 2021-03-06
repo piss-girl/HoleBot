@@ -30,12 +30,9 @@ dollar_emoji = '\U0001F4B2'
 
 
 smirk = '\U0001F60F'
-holetext = "hole"
 heart = '\U0001F496'
 yellow_heart = '\U0001F49B'
 drips = '\U0001F4A6'
-
-alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 h_v = 'hHχ'
 o_v = 'oOôòóôõöøÒÓÔÕÖØü0œòȯǒōõǫőốồṓṑȱṍȫỗṏǿȭǭỏơổọớờỡộởợ'
@@ -44,23 +41,23 @@ l_v = 'lL1ḹḻḽλ'
 e_v = 'eEëèéêËÈÊÉ3ėěĕēẽęȩɇếềḗḕễḝẻȅȇểẹḙḛệεⒺⓔ⒠'
 p_v = 'PpπⓅⓟ⒫℗ṔṕṖṗƤƥⱣℙǷꟼ℘'
 i_v = 'iI!1|ïÍÍíi̇́Ììi̇̀ĬĭÎîǏǐÏïḮḯĨĩi̇̃ĮįĮ́į̇́Į̃į̇̃ĪīĪ̀ī̀ỈỉȈȉI̋i̋ȊȋỊḬḭƗɨİiIıⒾⓘ⒤IiḬḭḮḯÍíÌìÎîÏïĨĩĪīĬĭĮįǏǐıƚⅈℹ'
-s_v = 'sS$5zΣšßŠς'
+s_v = 'sS$5ΣšßŠς'
 double_s = 'ß'
 c_v = 'ckKCĆćĈĉČčĊċC̄c̄ÇçḈḉȻȼƇƈɕƇ₡₢Ⓒⓒ⒞'
 u_v = 'uUūŪúǔǓùÙŭŬûÛüÜůŮųŲũŨűŰȕȔṳṲṵṴṷṶṹṸṻṺ'
 m_v = 'mMⓂⓜ⒨ḾḿṀṁṂṃꟿꟽⱮƜℳ'
 
-hole_e = re.compile(r'.*(?<!['+alphabet+'])+([\n\s]*)+['+h_v+']+([\s\n]*)+['+o_v+']+([\s\n]*)+['+l_v+']+([\s\n]*)+['+e_v+']+.*', re.MULTILINE)
-piss_e = re.compile(r'.*(?<!['+alphabet+'])+([\n\s]*)+['+p_v+']+([\s\n]*)+['+i_v+']+([\s\n]*)+['+s_v+']+([\s\n]*)+['+s_v+']+.*', re.MULTILINE)
-pis_e = re.compile(r'.*(?<!['+alphabet+'])+([\n\s]*)+['+p_v+']+([\s]*)+['+i_v+']+([\s\n]*)+['+double_s+']+.*', re.MULTILINE)
-pee_e = re.compile(r'.*(?<!['+alphabet+'])+([\n\s]*)+['+p_v+']+([\s]*)+['+e_v+']+([\s\n]*)+['+e_v+']+(?<!['+alphabet+'])+.*', re.MULTILINE)
-cum_e = re.compile(r'.*(?<!['+alphabet+'])+([\n\s]*)+['+c_v+']+([\s\n]*)+['+u_v+']+([\s\n]*)+['+m_v+']+.*', re.MULTILINE)
-coom_e = re.compile(r'.*(?<!['+alphabet+'])+([\n\s]*)+['+c_v+']+([\s\n]*)+['+o_vv+']+([\s\n]*)+['+o_vv+']+([\s\n]*)+['+m_v+']+.*', re.MULTILINE)
+hole_e = re.compile(r'.*(?<![A-z])+([\n\s]*)+['+h_v+']+([\s\n]*)+['+o_v+']+([\s\n]*)+['+l_v+']+([\s\n]*)+['+e_v+']+.*', re.MULTILINE)
+piss_e = re.compile(r'.*(?<![A-z])+([\n\s]*)+['+p_v+']+([\s\n]*)+['+i_v+']+([\s\n]*)+['+s_v+']+([\s\n]*)+['+s_v+']+.*', re.MULTILINE)
+pis_e = re.compile(r'.*(?<![A-z])+([\n\s]*)+['+p_v+']+([\s]*)+['+i_v+']+([\s\n]*)+['+double_s+']+.*', re.MULTILINE)
+pee_e = re.compile(r'.*(?<![A-z])+([\n\s]*)+['+p_v+']+([\s]*)+['+e_v+']+([\s\n]*)+['+e_v+']+(?<![A-z])+.*', re.MULTILINE)
+cum_e = re.compile(r'.*(?<![A-z])+([\n\s]*)+['+c_v+']+([\s\n]*)+['+u_v+']+([\s\n]*)+['+m_v+']+.*', re.MULTILINE)
+coom_e = re.compile(r'.*(?<![A-z])+([\n\s]*)+['+c_v+']+([\s\n]*)+['+o_vv+']+([\s\n]*)+['+o_vv+']+([\s\n]*)+['+m_v+']+.*', re.MULTILINE)
 
 holev_e = re.compile(r'.*(?<![wWcC])+([\n\s]*)+['+h_v+']+([\s\n]*)+['+o_v+']+([\s\n]*)+['+l_v+']+([\s\n]*)+['+e_v+']+.*', re.MULTILINE)
 pissv_e = re.compile(r'.*([\n\s]*)+['+p_v+']+([\s\n]*)+['+i_v+']+([\s\n]*)+['+s_v+']+([\s\n]*)+['+s_v+']+.*', re.MULTILINE)
 pisv_e = re.compile(r'.*([\n\s]*)+['+p_v+']+([\s]*)+['+i_v+']+([\s\n]*)+['+double_s+']+.*', re.MULTILINE)
-peev_e = re.compile(r'.*(?<!['+alphabet+'])+([\n\s]*)+['+p_v+']+([\s]*)+['+e_v+']+([\s\n]*)+['+e_v+']+(?<!['+alphabet+'])+.*', re.MULTILINE)
+peev_e = re.compile(r'.*(?<![A-z])+([\n\s]*)+['+p_v+']+([\s]*)+['+e_v+']+([\s\n]*)+['+e_v+']+(?<![A-z])+.*', re.MULTILINE)
 cumv_e = re.compile(r'.*([\n\s]*)+['+c_v+']+([\s\n]*)+['+u_v+']+([\s\n]*)+['+m_v+']+.*', re.MULTILINE)
 coomv_e = re.compile(r'.*([\n\s]*)+['+c_v+']+([\s\n]*)+['+o_vv+']+([\s\n]*)+['+o_vv+']+([\s\n]*)+['+m_v+']+.*', re.MULTILINE)
 
